@@ -13,7 +13,7 @@ before_install:
   - chmod +x gradlew
 
 script:
-  #./gradlew clean check sonarqube build
+  - ./gradlew clean check sonarqube build
   - sonar-scanner
 
 cache:
