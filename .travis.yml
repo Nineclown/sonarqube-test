@@ -1,7 +1,13 @@
 language: java
+sude: false
+dist: trusty
 jdk:
  - oraclejdk8
 install: true
+
+
+before_install:
+  - chmod +x gradlew
 
 addons:
   sonarcloud:
@@ -9,11 +15,9 @@ addons:
     token:
       secure: 20cccee07ce13984260fc360c226cdc1ad1b0ed5
 
-before_install:
-  - chmod +x gradlew
-
 script:
-  ./gradlew clean check sonarqube build
+ ./gradlew clean check sonarqube build
+
 cache:
   directories:
     $HOME/.m2/repository
