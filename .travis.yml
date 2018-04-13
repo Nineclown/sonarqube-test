@@ -27,8 +27,8 @@ addons:
       secure: 20cccee07ce13984260fc360c226cdc1ad1b0ed5
 
 script:
-  - mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify -B -e -V -Dsonar.version=$SONAR_VERSION -Dsonar-java.version=$SONAR_JAVA_VERSION
-  - if [[ $SONAR_VERSION = '6.7'* ]]; then mvn sonar:sonar -B -e -V; fi
+  - mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify -B -e -V -Dsonar.version=$SONAR_VERSION -Dsonar-java.version=$SONAR_JAVA_VERSION -X
+  - if [[ $SONAR_VERSION = '6.7'* ]]; then mvn sonar:sonar -B -e -V; fi -X
   - ./gradlew clean check sonarqube build
 
 deploy:
