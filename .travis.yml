@@ -14,6 +14,7 @@ before_install:
 
 script:
   # ./gradlew clean check sonarqube build
+  - ./gradlew clean check build
   - sonar-scanner
 
 cache:
