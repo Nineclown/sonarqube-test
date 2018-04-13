@@ -5,20 +5,9 @@ jdk:
  - oraclejdk8
 install: true
 
-env:
-  # latest LTS
-  - SONAR_VERSION=6.7.1 SONAR_JAVA_VERSION=5.1.0.13090
-  # latest
-  - SONAR_VERSION=7.0 SONAR_JAVA_VERSION=5.1.1.13214
-
 
 before_install:
   - chmod +x gradlew
-
-install:
-  # decrypt settings.xml, pubring.gpg and secring.gpg
-  - if [ -n "$encrypted_b6710039761a_key" ]; then openssl aes-256-cbc -K $encrypted_b6710039761a_key -iv $encrypted_b6710039761a_iv -in .travis/secrets.tar.enc -out .travis/secrets.tar -d; fi
-  - if [ -f ".travis/secrets.tar" ]; then tar -xvf .travis/secrets.tar -C .travis; fi
 
 addons:
   sonarcloud:
@@ -27,25 +16,7 @@ addons:
       secure: 20cccee07ce13984260fc360c226cdc1ad1b0ed5
 
 script:
-  - mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify -B -e -V -Dsonar.version=$SONAR_VERSION -Dsonar-java.version=$SONAR_JAVA_VERSION
-  - if [[ $SONAR_VERSION = '6.7'* ]]; then mvn sonar:sonar -B -e -V; fi
-  - ./gradlew clean check sonarqube build
-
-deploy:
-  # deploy SNAPSHOT artifact onto Sonatype Nexus
-  - provider: script
-    skip_cleanup: true
-    script: mvn deploy -B -P deploy -Dgpg.skip -s .travis/settings.xml
-    on:
-      branch: master
-      condition: "$SONAR_VERSION = '6.7'*"
-  # deploy STABLE artifact onto Sonatype Nexus
-  - provider: script
-    skip_cleanup: true
-    script: mvn deploy -B -P deploy -s .travis/settings.xml
-    on:
-      tags: true
-      condition: "$SONAR_VERSION = '6.7'*"
+ ./gradlew clean check sonarqube build
 
 cache:
   directories:
