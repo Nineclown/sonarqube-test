@@ -3,7 +3,9 @@ plugins {
 }
 
 apply plugin: 'java'
-apply plugin: 'jdepend'
+apply plugin: 'pmd'
+apply plugin: 'findbugs'
+apply plugin: 'checkstyle'
 
 group 'org.test.sonarqube'
 version '1.0-SNAPSHOT'
@@ -13,6 +15,26 @@ repositories {
     mavenCentral()
 }
 
+checkstyle {
+    configFile = new File(rootDir, "config/checkstyle.xml")
+}
+
+findbugs {
+    ignoreFailures = true;
+}
+
+pmd {
+    ruleSets = ["basic", "braces", "design"]
+    igoreFailures = true
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/java'
+        }
+    }
+}
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
