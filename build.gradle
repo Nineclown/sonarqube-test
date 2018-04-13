@@ -7,6 +7,7 @@ apply plugin: 'checkstyle'
 
 group 'org.test.sonarqube'
 version '1.0-SNAPSHOT'
+compileJava.options.encoding = 'UTF-8'
 sourceCompatibility = 1.8
 
 repositories {
@@ -17,6 +18,7 @@ checkstyle {
     toolVersion '7.8.1'
     configFile file("config/checkstyle/checkstyle.xml")
 }
+
 checkstyleMain {
     source ='src/main/java'
 }
