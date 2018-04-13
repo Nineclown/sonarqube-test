@@ -3,6 +3,7 @@ plugins {
 }
 
 apply plugin: 'java'
+apply plugin: 'jdepend'
 
 group 'org.test.sonarqube'
 version '1.0-SNAPSHOT'
