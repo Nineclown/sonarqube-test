@@ -3,8 +3,6 @@ plugins {
 }
 
 apply plugin: 'java'
-apply plugin: 'pmd'
-apply plugin: 'findbugs'
 apply plugin: 'checkstyle'
 
 group 'org.test.sonarqube'
@@ -16,25 +14,24 @@ repositories {
 }
 
 checkstyle {
-    configFile = new File(rootDir, "config/checkstyle.xml")
+    toolVersion '7.8.1'
+    configFile file("config/checkstyle/checkstyle.xml")
+}
+checkstyleMain {
+    source ='src/main/java'
+}
+checkstyleTest {
+    source ='src/test/java'
 }
 
-findbugs {
-    ignoreFailures = true;
-}
-
-pmd {
-    ruleSets = ["basic", "braces", "design"]
-    igoreFailures = true
-}
-
-sourceSets {
-    main {
-        java {
-            srcDir 'src/java'
-        }
+tasks.withType(Checkstyle) {
+    reports {
+        xml.enabled false
+        html.enabled true
+        html.stylesheet resources.text.fromFile('config/xsl/checkstyle-custom.xsl')
     }
 }
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
