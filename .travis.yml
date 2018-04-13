@@ -1,0 +1,18 @@
+language: java
+jdk:
+ - oraclejdk8
+install: true
+addons:
+  sonarcloud:
+    organization: nineclown-github
+    token:
+      secure: 20cccee07ce13984260fc360c226cdc1ad1b0ed5
+script:
+  ./gradlew clean check sonarqube build
+cache:
+  directories:
+    $HOME/.m2/repository
+    $HOME/.sonar/cache
+    $HOME/.gradle
+    .gradle
+    
