@@ -17,7 +17,7 @@ deploy:
 
   skip_cleanup: true
   on:
-    tags: true
+    tags: false
 
 before_install:
   - chmod +x gradlew
