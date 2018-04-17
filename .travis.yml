@@ -11,8 +11,7 @@ addons:
 
 deploy:
   provider: releases
-  api_key:
-    secure: "GITHUB OAUTH TOKEN"
+  api_key: 9a39e32cc3da852114fc7bbc053a7d378fb985f5
   file_glob: true
   file: "/home/travis/*"
   skip_cleanup: true
