@@ -14,9 +14,9 @@ deploy:
   api_key: "GITHUB OAUTH TOKEN"
   file_glob: true
   file: $HOME/.m2/repository
-
   skip_cleanup: true
   on:
+    repo: Nineclown/sonarqube-test
     tags: false
 
 before_install:
