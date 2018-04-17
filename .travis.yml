@@ -14,7 +14,7 @@ addons:
 deploy:
   provider: releases
   api_key:
-    secure: 9a39e32cc3da852114fc7bbc053a7d378fb985f5
+    secure: "GITOKEN"
   file_glob: true
   file: "/home/travis/*"
   skip_cleanup: true
