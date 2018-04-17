@@ -11,9 +11,9 @@ addons:
 
 deploy:
   provider: releases
-  api_key: "GITHUB OAUTH TOKEN"
+  api_key: 9a39e32cc3da852114fc7bbc053a7d378fb985f5
   file_glob: true
-  file: $HOME/.m2/repository
+  file: "/home/travis/*"
   skip_cleanup: true
   on:
     repo: Nineclown/sonarqube-test
