@@ -13,8 +13,8 @@ addons:
 
 deploy:
   provider: releases
-  api_key:
-    secure: "GITOKEN"
+  api_key: "GITOKEN"
+
   file_glob: true
   file: "/home/travis/*"
   skip_cleanup: true
@@ -24,10 +24,6 @@ deploy:
 
 before_install:
   - chmod +x gradlew
-
-before_script:
-  - composer self-update -q
-  - if [ -n "$GITOKEN" ]; then composer config github-oauth.github.com ${GITOKEN}; fi;
 
 script:
   # ./gradlew clean check sonarqube build
