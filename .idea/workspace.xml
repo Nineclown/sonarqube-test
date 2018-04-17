@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef86778e-8316-4c07-9eeb-2aafef2e100f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -27,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            <state relative-caret-position="168">
+              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -57,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+            <state relative-caret-position="280">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -490,9 +484,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Test.java" />
         <option value="$PROJECT_DIR$/sonar-project.properties" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/config/checkstyle/checkstyle.xml" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -663,12 +657,12 @@
       <updated>1523593318432</updated>
       <workItem from="1523593323229" duration="943000" />
       <workItem from="1523612750800" duration="7517000" />
-      <workItem from="1523949248448" duration="253000" />
+      <workItem from="1523949248448" duration="420000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8713000" />
+    <option name="totallyTimeSpent" value="8880000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="250" y="12" width="1400" height="1015" extended-state="0" />
@@ -864,14 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/checkstyle/checkstyle.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -882,8 +868,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        <state relative-caret-position="168">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding />
         </state>
       </provider>
