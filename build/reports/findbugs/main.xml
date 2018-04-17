@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1523950049311" analysisTimestamp="1523950049380" release="">
+  <Project projectName="">
+    <Jar>C:\Users\nineClown\Documents\GitHub\sonarqube-test\build\classes\java\main</Jar>
+    <SrcDir>C:\Users\nineClown\Documents\GitHub\sonarqube-test\src\main\java\Test.java</SrcDir>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="Test">
+      <SourceLine classname="Test" start="22" end="130" sourcefile="Test.java" sourcepath="Test.java"/>
+    </Class>
+    <Method classname="Test" name="start" signature="()V" isStatic="false">
+      <SourceLine classname="Test" start="37" end="48" startBytecode="0" endBytecode="196" sourcefile="Test.java" sourcepath="Test.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="Test" start="37" end="37" startBytecode="12" endBytecode="12" sourcefile="Test.java" sourcepath="Test.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="Test">
+      <SourceLine classname="Test" start="22" end="130" sourcefile="Test.java" sourcepath="Test.java"/>
+    </Class>
+    <Method classname="Test" name="start" signature="()V" isStatic="false">
+      <SourceLine classname="Test" start="37" end="48" startBytecode="0" endBytecode="196" sourcefile="Test.java" sourcepath="Test.java"/>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter" start="109" end="115" startBytecode="0" endBytecode="108" sourcefile="OutputStreamWriter.java" sourcepath="java/io/OutputStreamWriter.java"/>
+    </Method>
+    <SourceLine classname="Test" start="38" end="38" startBytecode="33" endBytecode="33" sourcefile="Test.java" sourcepath="Test.java"/>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE">
+    <Class classname="Test">
+      <SourceLine classname="Test" start="22" end="130" sourcefile="Test.java" sourcepath="Test.java"/>
+    </Class>
+    <Method classname="Test" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="Test" start="50" end="76" startBytecode="0" endBytecode="390" sourcefile="Test.java" sourcepath="Test.java"/>
+    </Method>
+    <LocalVariable name="?" register="-1" pc="9" role="LOCAL_VARIABLE_UNKNOWN"/>
+    <SourceLine classname="Test" start="50" end="50" startBytecode="9" endBytecode="9" sourcefile="Test.java" sourcepath="Test.java"/>
+    <SourceLine classname="Test" start="58" end="58" startBytecode="88" endBytecode="88" sourcefile="Test.java" sourcepath="Test.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 17 Apr 2018 16:27:29 +0900" total_classes="1" referenced_classes="22" total_bugs="3" total_size="89" num_packages="1" java_version="1.8.0_161" vm_version="25.161-b12" cpu_seconds="15.34" clock_seconds="5.64" peak_mbytes="118.60" alloc_mbytes="1790.50" gc_seconds="0.05" priority_2="1" priority_1="2">
+    <PackageStats package="" total_bugs="3" total_types="1" total_size="89" priority_2="1" priority_1="2">
+      <ClassStats class="Test" sourceFile="Test.java" interface="false" size="89" bugs="3" priority_2="1" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="769" invocations="349" avgMicrosecondsPerInvocation="2205" maxMicrosecondsPerInvocation="70847" standardDeviationMircosecondsPerInvocation="6635"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="699" invocations="350" avgMicrosecondsPerInvocation="1998" maxMicrosecondsPerInvocation="23303" standardDeviationMircosecondsPerInvocation="2563"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="271" invocations="22" avgMicrosecondsPerInvocation="12339" maxMicrosecondsPerInvocation="84505" standardDeviationMircosecondsPerInvocation="20688"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="227" invocations="80" avgMicrosecondsPerInvocation="2844" maxMicrosecondsPerInvocation="80355" standardDeviationMircosecondsPerInvocation="9514"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="225" invocations="7" avgMicrosecondsPerInvocation="32237" maxMicrosecondsPerInvocation="93821" standardDeviationMircosecondsPerInvocation="31756"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="219" invocations="22" avgMicrosecondsPerInvocation="9996" maxMicrosecondsPerInvocation="89610" standardDeviationMircosecondsPerInvocation="20491"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="174" invocations="7" avgMicrosecondsPerInvocation="24867" maxMicrosecondsPerInvocation="167007" standardDeviationMircosecondsPerInvocation="58036"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="121" invocations="37" avgMicrosecondsPerInvocation="3294" maxMicrosecondsPerInvocation="73652" standardDeviationMircosecondsPerInvocation="12444"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="120" invocations="22" avgMicrosecondsPerInvocation="5487" maxMicrosecondsPerInvocation="35645" standardDeviationMircosecondsPerInvocation="10124"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="118" invocations="7" avgMicrosecondsPerInvocation="16886" maxMicrosecondsPerInvocation="46503" standardDeviationMircosecondsPerInvocation="14983"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="117" invocations="7" avgMicrosecondsPerInvocation="16728" maxMicrosecondsPerInvocation="48368" standardDeviationMircosecondsPerInvocation="16824"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="107" invocations="16" avgMicrosecondsPerInvocation="6722" maxMicrosecondsPerInvocation="36362" standardDeviationMircosecondsPerInvocation="11102"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="101" invocations="22" avgMicrosecondsPerInvocation="4615" maxMicrosecondsPerInvocation="58876" standardDeviationMircosecondsPerInvocation="13215"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="99" invocations="7" avgMicrosecondsPerInvocation="14159" maxMicrosecondsPerInvocation="62598" standardDeviationMircosecondsPerInvocation="20553"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="92" invocations="313" avgMicrosecondsPerInvocation="296" maxMicrosecondsPerInvocation="4660" standardDeviationMircosecondsPerInvocation="606"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
